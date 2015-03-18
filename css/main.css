@@ -1,0 +1,153 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Clearfix */
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/* General */
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.navbar li {
+    display: inline;
+    text-transform: uppercase;
+}
+
+.col-4 {
+    width: 320px;
+    float: left;
+}
+
+.col-3 {
+    width: 240px;
+    float: left;
+}
+
+a {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+/* Header */
+
+header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.navbar-left {
+    float: left;
+}
+
+.navbar-right {
+    float: right;
+}
+
+.logo {
+    float: left;
+    position: relative;
+    top: 10px;
+}
+
+.adv {
+    float: right;
+}
+
+/* Nav */
+nav {
+    margin-bottom: 30px;
+}
+.search-box {
+    float: right;
+}
+
+.main-nav {
+    background-color: #d1d1d1;
+    height: 48px;
+}
+.main-nav a {
+    padding: 15px 6px;
+    line-height: 48px;
+}
+
+.main-nav a:hover {
+    color: #f1f1f1;
+    background-color: #b32222;
+}
+
+input[type='search'] {
+    height: 48px;
+}
+
+/* Slider */
+
+.slider {
+    background: url('../img/banner.jpg') no-repeat;
+    height: 300px;
+    margin-bottom: 340px;
+}
+
+.slider-image {
+    position: absolute;
+}
+
+.slider-content {
+    width: 300px;
+    z-index: 10;
+}
